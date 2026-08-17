@@ -12,7 +12,7 @@
     
     <section class="conteudo">
 
-        <div class="conteudp-titulo">
+        <div class="conteudo-titulo">
             <img src="unlock.svg" alt="Cadeado">
             <h2 class="titulo-principal">Gerador de Senhas</h2>
             <h3 class="titulo-secundario">
@@ -38,63 +38,92 @@
             <div class="parametro-coluna__senha">
                 
                 <!-- Tamanho da senha -->
-                 <div class="parametro-senha">
-
+                <div class="parametro-senha">
                     <h4 class="parametro-senha__titulo">
-                        Numero de caracteres
+                        Número de caracteres
                     </h4>
 
                     <div class="parametro-senha-botoes">
                         <button class="parametro-senha_botao" type="button">-</button>
                         <p class="parametro-senha_texto">12</p>
                         <button class="parametro-senha_botao" type="button">+</button>
+                    </div>
+                </div>
 
-
+                <!-- Características -->
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha_titulo">
+                        Características da senha
+                    </h4>
+                    
+                    <div class="parametro-senha-checkbox">
+                        <input
+                            type="checkbox"
+                            id="maiusculo"
+                            class="checkbox"
+                            checked>
+                        <label for="maiusculo">
+                            Letras maiúsculas
+                        </label>
                     </div>
 
-                    <!-- Características -->
-                     <div class="parametro-senha">
+                    <div class="parametro-senha-checkbox">
+                        <input
+                            type="checkbox"
+                            id="minusculo"
+                            class="checkbox"
+                            checked>
+                        <label for="minusculo">
+                            Letras minúsculas
+                        </label>
+                    </div>
+                    
+                    <div class="parametro-senha-checkbox">
+                        <input 
+                            type="checkbox"
+                            id="numero"
+                            class="checkbox"
+                            checked>
+                        <label for="numero">
+                            Números
+                        </label>
+                    </div>
 
-                        <h4 class="parametro-senha_titulo">
-                            Caracteísticas da senha
-                        </h4>
-                        
-                        <div class="parametro-senha-checkbox">
-                            <input
-                                type="checkbox"
-                                id="maiusculo"
-                                class="checlbox"
-                                checked>
-                            <label for="maiusculo">
-                                    Letras maiúsculas
-                            </label>
-                        </div>
+                    <div class="parametro-senha-checkbox">
+                        <input 
+                            type="checkbox"
+                            id="simbolo"
+                            class="checkbox">
+                        <label for="simbolo">
+                            Símbolos
+                        </label>
+                    </div>
+                </div>
 
-                        <div class="parametro-senha-checkbox">
-                            <input
-                                type="checkbox"
-                                id="minusculo"
-                                class="checkbox"
-                                checked>
-                            <label for="minusculo">
-                                    Letras minúsculas
-                            </label>
-                        </div>
-                        
-                        <div class="parametro-senha-checkbox">
-                            <input 
-                                type="checkbox"
-                                id="numero"
-                                class="checkbox"
-                                checked>
-                            <label for="numero">
-                                
-                            </label>
-                        </div>
-                     </div>
-                 </div>
+                <!-- Força da senha -->
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha_titulo">
+                        Força da senha
+                    </h4>
+
+                    <div class="barra">
+                        <div class="forca"></div>
+                    </div>
+
+                    <div class="parametro-senha-textos">
+                        <p>Fraca</p>
+                        <p>Média</p>
+                        <p>Forte</p>
+                    </div>
+                </div>
+
             </div>
         </div>
+
     </section>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
